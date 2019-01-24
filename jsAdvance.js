@@ -192,3 +192,9 @@ console.log(oob.getId.newCar01()); // 654
 //array function 
 let cardWinner = () => 123;
 console.log(cardWinner()); // 123
+//arrowa function containig both prefix and suffix
+let score01 = (prefix, suffix) =>
+{
+  return prefix + 123 +suffix;
+};
+console.log("ID: ", '!'); // ID: 123!
