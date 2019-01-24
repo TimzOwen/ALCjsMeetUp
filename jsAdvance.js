@@ -188,3 +188,7 @@ let newCar01 = {
 };
 let newFn = oob.getId.bind(newCar01);
 console.log(oob.getId.newCar01()); // 654
+
+//array function 
+let cardWinner = () => 123;
+console.log(cardWinner()); // 123
