@@ -289,3 +289,50 @@ class Car{
 let car = new Car(123);
 car.id = 456; //becomes the current id 456 as output
 console.log(car.id);//123
+
+ //methods and constructors;
+ class Car{
+     constructor(id)
+     {
+       this.id = id;
+     }
+     identify(suffix)//no need of declaration
+     {
+       return `Car Id: ${this.id} ${suffix}`;//avoid white spaces
+     }
+ }
+ let car = new Car(123);
+
+ console.log(car.identify("!!!"));//123
+
+ //inheritance
+ class Vehicle{
+     constructor()
+     {
+       this.type = 'car';
+     }
+     Start()
+     {
+       return `starting: ${this.style} }`;
+     }
+ }
+
+ //inheritance;
+  class Lorry extends Vehicle{
+    Start()
+    {
+      return `starting in Car `+ super.Start();
+    }
+
+  }
+ let car = new Vehicle();
+
+ console.log(car.type);//123
+
+//Importing modules
+import {car} from './car.js/';
+let car = new Car(123);
+console.log(car.id);//123
+
+
+
