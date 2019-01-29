@@ -273,3 +273,19 @@ let carIds =[
 ];
 let car = carIds.find(car=> car.carId>500);
 console.log(car);// 893
+//js classes
+class Glass{
+
+};
+let glass = new Glass();
+console.log(glass);
+
+class Car{
+    constructor(id)
+    {
+      this.id = id;
+    }
+}
+let car = new Car(123);
+car.id = 456; //becomes the current id 456 as output
+console.log(car.id);//123
