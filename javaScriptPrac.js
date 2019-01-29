@@ -217,3 +217,59 @@ console.log('foo:' .hello()); // foo hello
    style: "Convertible"
  };
  console.log(JSON.stringify(car)); // "id":123 , "style": 'convertible'
+
+//Converting arays to JSON
+let car = [
+  {carID:123},
+  {carID:456},
+  {carID:789}
+];
+console.log(JSON.stringify(car));// [{'cardID':123},{'cardID'456},{'cardID':789}]
+
+//parsing json
+let jsonIn = `
+[
+  {'carId':123},
+  {'carId':456},
+  {'carId':789}
+]`;
+let cardId = JSON.parse(jsonIn);
+console.log(cardId)// real objects = {cardId:123},{cardId:456},
+
+//forEach iteration in looping arays
+let carIds =[
+    {carId:123, style:'sedean'},
+    {carId:123, style:'convetible'},
+    {carId:123, style:'sedean'}
+];
+carIds.forEach(car => console.log(car));
+carIds.forEach((car, index)=> console.log(car,index));// gives acr and index array position
+
+let carIds =[
+    {carId:123, style:'sedean'},
+    {carId:123, style:'convertible'},
+    {carId:123, style:'sedean'}
+];
+ let convertibles= cardIds.filter(car=> car.style === 'convertible');
+
+ console.log(convertibles);// 0: {carId: 123, style: "convertible"}
+           //  length: 1
+          //__proto__: Array(0)
+
+//CAsting all arrays
+let carIds =[
+    {carId:123, style:'sedean'},
+    {carId:123, style:'convertible'},
+    {carId:123, style:'sedean'}
+];
+ let results = carIds.every(car=> car.carId>0);
+ console.log(results);// true
+
+//find in array oteration
+let carIds =[
+    {carId:123, style:'sedean'},
+    {carId:893, style:'convertible'},
+    {carId:033, style:'sedean'}
+];
+let car = carIds.find(car=> car.carId>500);
+console.log(car);// 893
