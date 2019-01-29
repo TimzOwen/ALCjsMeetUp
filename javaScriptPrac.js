@@ -334,5 +334,51 @@ import {car} from './car.js/';
 let car = new Car(123);
 console.log(car.id);//123
 
+//programing BOM and DOM
+year = 489566;
+console.log(window.year)// 4895
+
+//PROGRAMING BOM AND DOM
+
+let intervalId = setInterval(function()
+{
+  console.log('1 sec passed');
+},1000);
+clearInterval(intervalId);// commenting out 'clearInterval' outpurts 1 sec on each count passed
+
+//location
+console.log(location.href);//displays current window;
+console.log(document.location.href);//displays same thing using the document
+
+//acessing BOM and DOM
+let el = document.getElementById('para1');
+console.log(el);//prints first html paragram.
+
+//Error Handling
+try
+{
+  let car = newCar;
+  
+  throw new Error("Oops it occure again");
+}
+catch(error)
+{
+  console.log('error',error)
+}
+finally
+{
+  console.log('out');
+}
+console.log(continuing---);// prints out continuing aas car is not defined
+
+//promise
+let promise = new promise(function (resolve,reject)
+{
+  setTimeout(resolve, 100,'some value');
+});
+console.log(promise);
+
+
+
 
 
