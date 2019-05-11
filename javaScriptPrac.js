@@ -1,8 +1,8 @@
-//constants
+//constants unlike in java should not take the "Public final static String type format"
 const cardId = 200; //must be initialized;
 //let and var . let if blockk scooped.
 
-if(true)
+if(true)// check the condtion of the car color selee=ction
 {
   let cardId = 25;
 }
