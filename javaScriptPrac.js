@@ -1,5 +1,5 @@
 //constants unlike in java should not take the "Public final static String type format"
-const cardId = 200; //must be initialized;
+const cardId = 200; //must be initialized;(Constant is therefore used instead of the public static final")|
 //let and var . let if blockk scooped.
 
 if(true)// check the condtion of the car color selee=ction
