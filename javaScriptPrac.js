@@ -1,4 +1,4 @@
-//constants unlike in java should not take the "Public final static String type format"
+
 const cardId = 200; //must be initialized;(Constant is therefore used instead of the public static final")|
 //let and var . let if blockk scooped.
 
