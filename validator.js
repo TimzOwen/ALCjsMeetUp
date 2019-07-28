@@ -76,9 +76,9 @@ var i,
 
 	// Instance methods
 	hasOwn = ({}).hasOwnProperty,
-	arr = [],
-	pop = arr.pop,
-	push_native = arr.push,
+	arr = [], //length is not know 
+	pop = arr.pop, // removing from the arrray
+	push_native = arr.push, //inserting ino the array
 	push = arr.push,
 	slice = arr.slice,
 	// Use a stripped-down indexOf as it's faster than native
