@@ -168,11 +168,7 @@ let obje = {
     {
       return this.cardId;
     }
-};
-let newCar1 ={
-  cardId:789
-};
-console.log(obje.gettId.apply(newCar1['ID: '])); // ID:789
+
 
 
 //Binding function in java script;
