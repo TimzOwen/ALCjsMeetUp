@@ -34,7 +34,7 @@ console.log(car01, theRest);// 100 [300]
 
 //destructing objects;
 let car = {
-   id: 500,
+   id: 4500,
    style: 'Convertible'
 };
 let {id ,style} =car;
