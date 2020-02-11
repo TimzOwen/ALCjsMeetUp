@@ -369,7 +369,7 @@ finally
 {
   console.log('out');
 }
-console.log(continuing---);// prints out continuing aas car is not defined
+console.log("continuing---");// prints out continuing aas car is not defined
 
 //promise
 let promise = new promise(function (resolve,reject)
