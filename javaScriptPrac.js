@@ -331,7 +331,7 @@ console.log(car.id);//123
 
 //Importing modules
 import {car} from './car.js/';
-let car = new Car(123);
+let car = new Vehicle(123);
 console.log(car.id);//123
 
 //programing BOM and DOM
