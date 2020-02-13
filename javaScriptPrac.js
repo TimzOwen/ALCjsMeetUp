@@ -331,7 +331,7 @@ console.log(car.id);//123
 
 //Importing modules
 import {car} from './car.js/';
-let car = new Car(123);
+let car = new Vehicle(123);
 console.log(car.id);//123
 
 //programing BOM and DOM
@@ -369,7 +369,7 @@ finally
 {
   console.log('out');
 }
-console.log(continuing---);// prints out continuing aas car is not defined
+console.log("continuing---");// prints out continuing aas car is not defined
 
 //promise
 let promise = new promise(function (resolve,reject)
