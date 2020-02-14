@@ -63,8 +63,7 @@ typeOf(true);//boolean
 //typeOf((){});//function
 
 //for loop
-let i=0;
-for(; i<12; i++)
+for(i=0; i<12; i++)
 {
   if(i==8)
   {
@@ -73,14 +72,14 @@ for(; i<12; i++)
 }
 console.log(i)// 8;
 
-for(let i= 0; i<5; i++)
+for(i= 0; i<5; i++)
 {
   if(i=4)
   {
     continue;
   }
 }
-console.log(i) // 0 1 2 3 5;
+console.log(i) //  5;
 
 //Logical operators
 let userString = 'null';
@@ -159,16 +158,16 @@ let obj = {
 let newCar ={
   cardId:789
 };
-console.log(o.gettId.call(newCar)); // 789
+console.log(obj.gettId.call(newCar)); // 789
 
 //apply
 let obje = {
     cardId: 456,
-    gettId: function ()
+    getId: function ()
     {
       return this.cardId;
     }
-
+  }
 
 
 //Binding function in java script;
